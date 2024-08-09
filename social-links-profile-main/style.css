@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+     display: flex; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 20rem;
+    /* height: 30rem; */
+    /* margin: 5rem auto; */
+    background-color:hsl(0, 0%, 12%);
+   
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+}
+.heading{
+    padding: 1.5rem;
+
+}
+.heading h2{
+    color:  hsl(0, 0%, 100%);
+
+}
+.heading p{
+    padding-top: 10px;
+    color: hsl(75, 94%, 57%);
+}
+#para{
+    color:  hsl(0, 0%, 100%);
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width:  80px;
+    border-radius: 50%;
+    display: block;
+}
+.actions{
+    padding: 0 1rem;
+    padding-top: 2rem;
+    
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+.actions button{
+    padding: .5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 20%);
+    color:  hsl(0, 0%, 100%);
+}
+
+.actions button:hover,
+.actions button:active{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
