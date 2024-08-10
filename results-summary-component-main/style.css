@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+     --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+body{
+     background-color: hsl(0, 11%, 96%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: 'Hanken grotesk', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.first{
+    width: 280px;
+    height: 350px;
+    text-align: center;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px ;
+    padding: 2rem;
+    background: linear-gradient(45deg,var(--Light-royal-blue), var(--Light-slate-blue)
+      );
+      position: relative;
+      left:40px;
+   box-shadow: 0px 4px 10px rgba(0, 0 ,0, 0.2);
+    }
+
+  .first h3{
+    color:hsl(224, 30%, 85%);
+  }
+  .first h2{
+    color:hsl(0, 0%, 100%);
+  }
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(var(--Violet-blue),var(--Persian-blue));
+}
+.circle h1{
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 60px;
+
+}
+.circle h5{
+    color: hsl(241, 100%, 89%);
+    padding: s0px;
+}
+.second{
+    width: 280px;
+   box-shadow: 0px 4px 10px rgba(0, 0 ,0, 0.2);
+    /* text-align: center; */
+   
+    border-radius: 1.5rem;
+    background-color:hsl(0, 0%, 100%);
+    padding:30px;
+    padding-left: 4rem;
+    /* align-items:; */
+}
+.second ul{
+    list-style: none;
+    display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+.second li{
+    display: flex;
+      justify-content: space-between;
+   padding: 0 12px;
+    align-items: center;
+    
+    
+    
+}
+.second h1{
+    color: hsl(240, 2%, 31%);
+    padding-bottom: 10px;
+}
+.second h2{
+    font-size: 15px;
+    padding: 5px;
+}
+svg{
+   margin-right: 15px;
+}
+.list_1{
+    background-color: rgb(243, 231, 231);
+    border-radius: .5rem;
+}
+.list_1 h2{
+    color: rgb(199, 104, 104);
+}
+
+.list_2{
+    background-color: rgb(250, 243, 142);
+    border-radius: .5rem;
+}
+.list_2 h2{
+    color: hsl(39, 100%, 56%);}
+.list_3{
+    background-color: hsla(166, 100%, 37%, 0.342);
+   
+    border-radius: .5rem;
+}
+.list_3 h2{
+    color: hsl(166, 100%, 37%);
+}
+.list_4{
+    background-color: rgb(216, 233, 240);
+
+    border-radius: .5rem;
+}
+.list_4 h2{
+    color: rgb(91, 91, 219);
+}
+.para{
+    color: hsl(224, 30%, 85%);
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 50px ;
+    padding: 10px;
+    background-color:  hsl(224, 30%, 27%);
+    transition: .3s  ease-in;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+button:hover,
+button:active{
+    transform: translatey(-10px);
+    background-color:  hsl(241, 81%, 54%)
+}
+
+@media screen and (max-width:435px){
+    .container{
+        width: 425px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .first{
+        width: 100%;
+      
+        position: relative;
+        top: 20px;
+        left: 0;
+        right: 0;
+        }
+        .second{
+            width: 100%;
+            padding: 2rem;
+            padding-top: 3rem;
+            margin: 0px;
+        }
+}
